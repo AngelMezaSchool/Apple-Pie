@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
         let letterString = sender.configuration!.title!
-        //let letterString = sender.title(for: .normal)! //por alguna razon no funciona - for some reason this line isn't working
+        //let letterString = sender.title(for: .normal)! //por alguna razon no funciona - for some reason this line isn't working :v
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
         //updateUI()
